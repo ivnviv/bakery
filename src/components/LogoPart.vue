@@ -5,8 +5,8 @@
 <template>
   <div class="main-picture">
     <div class="bakery-title">
-      <div class="bakery-type">- ТОРТИКОВОЕ ЦАРСТВО1 -</div>
-      <div class="bakery-name">SANYA-BAKERY1</div>
+      <div class="bakery-type">- ТОРТИКОВОЕ ЦАРСТВО -</div>
+      <div class="bakery-name">SANYA-BAKERY</div>
     </div>
   </div>
 </template>
