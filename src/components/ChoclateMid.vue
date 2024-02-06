@@ -4,7 +4,7 @@
 
 <template>
     <video autoplay muted loop id="myVideo">
-      <source src="@/assets/videoplayback.mp4" type="video/mp4">
+      <source src="../assets/Home/videoplayback.mp4" type="video/mp4">
     </video>
 </template>
 

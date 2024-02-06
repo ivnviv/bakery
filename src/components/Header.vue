@@ -2,8 +2,8 @@
   <nav class="top-menu">
     <div class="left-menu">
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Меню</a></li>
+        <li><a href="#"><router-link to="/">Главная</router-link></a></li>
+        <li><a href="#"><router-link to="/menu">Меню</router-link></a></li>
         <li><a @click.prevent="scrollToFooter">Контакты</a></li>
       </ul>
     </div>
@@ -11,17 +11,17 @@
       <ul>
         <li>
           <a href="https://www.instagram.com/cerfus_88/" target="_blank">
-            <img src="@/assets/insta-logo.png" alt="Instagram Логотип">
+            <img src="../assets/Home/insta-logo.png" alt="Instagram Логотип">
           </a>
         </li>
         <li>
           <a href="https://vk.com/cerfus_88" target="_blank">
-            <img src="@/assets/vk-logo.png" alt="VK Логотип">
+            <img src="../assets/Home/vk-logo.png" alt="VK Логотип">
           </a>
         </li>
         <li>
           <a href="https://t.me/Cerfus29" target="_blank">
-            <img src="@/assets/tg-logo.png" alt="ТГ Логотип">
+            <img src="../assets/Home/tg-logo.png" alt="ТГ Логотип">
           </a>
         </li>
       </ul>

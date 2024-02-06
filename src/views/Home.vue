@@ -1,16 +1,14 @@
 <template>
   <div class="main-container">
-    <!--   <Header></Header>-->
-    <!--   <LogoPart></LogoPart>-->
-    <!--   <AboutMe></AboutMe>-->
-    <!--   <Galery></Galery>-->
-    <!--   <ChoclateMid></ChoclateMid>-->
-    <!--   <Footer></Footer>-->
+    <Header></Header>
+    <LogoPart></LogoPart>
+    <AboutMe></AboutMe>
+    <Galery></Galery>
+    <ChoclateMid></ChoclateMid>
+    <Footer></Footer>
 
-    <Home></Home>
-<!--    <Menu></Menu>-->
-    <router-view></router-view>
   </div>
+
 
 
 </template>
@@ -22,11 +20,8 @@ import AboutMe from "@/components/AboutMe.vue";
 import Footer from "@/components/Footer.vue";
 import ChoclateMid from "@/components/ChoclateMid.vue";
 import Galery from "@/components/Galery.vue";
-import Home from "@/views/Home.vue";
-import Menu from "@/views/Menu.vue";
-
 export default {
-  components: {Menu, Home, ChoclateMid, Footer, AboutMe, LogoPart, Header, Galery}
+  components: {ChoclateMid, Footer, AboutMe, LogoPart, Header, Galery}
 }
 </script>
 

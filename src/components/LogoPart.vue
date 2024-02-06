@@ -13,7 +13,7 @@
 
 <style scoped>
 .main-picture {
-  background-image: url("src/assets/mainPicture.jpg");
+  background-image: url("../assets/Home/mainPicture.jpg");
   background-size: cover;
   background-position: center;
   height: 655px;

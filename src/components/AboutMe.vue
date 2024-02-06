@@ -1,6 +1,6 @@
 <template>
   <div class="my-history-block">
-    <img class="my-history-photo" src="@/assets/Sanya2.png" alt="">
+    <img class="my-history-photo" src="../assets/Home/Sanya2.png" alt="">
     <div class="my-history-text">
       <h1>Моя история</h1>
       <h2>Меня зовут Санька</h2>

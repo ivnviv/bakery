@@ -18,11 +18,11 @@ export default {
   data() {
     return {
       images: [
-        {src: 'src/assets/Galery/1.png', alt: 'Description 1'},
-        {src: 'src/assets/Galery/3.png', alt: 'Description 2'},
-        {src: 'src/assets/Galery/4.png', alt: 'Description 2'},
-        {src: 'src/assets/Galery/5.png', alt: 'Description 2'},
-        {src: 'src/assets/Galery/6.png', alt: 'Description 2'},
+        {src: 'src/assets/Home/Galery/1.png', alt: 'Description 1'},
+        {src: 'src/assets/Home/Galery/3.png', alt: 'Description 2'},
+        {src: 'src/assets/Home/Galery/4.png', alt: 'Description 2'},
+        {src: 'src/assets/Home/Galery/5.png', alt: 'Description 2'},
+        {src: 'src/assets/Home/Galery/6.png', alt: 'Description 2'},
         // Add more images as needed
       ],
       showModal: false,
