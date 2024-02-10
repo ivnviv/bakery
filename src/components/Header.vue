@@ -49,7 +49,8 @@ const scrollToFooter = () => {
 
 <style scoped>
 .navbar {
-  background-color: #fa9999;
+  background-color: #f7f7f7 !important;
+  opacity: 90%;
 }
 
 .navbar-nav li {
