@@ -1,13 +1,21 @@
 <template>
-  <div class="gallery">
-    <h2>Мои работы</h2>
-    <div v-for="(image, index) in images" :key="index" class="gallery-item">
-      <img :src="image.src" :alt="image.alt" @click="openImage(image.src, image.alt)">
-    </div>
-    <div v-if="showModal" class="modal">
-      <div class="modal-content">
-        <span class="close" @click="closeModal">&times;</span>
-        <img :src="selectedImage.src" :alt="selectedImage.alt">
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gallery">
+          <h2>Мои работы</h2>
+          <div v-for="(image, index) in images" :key="index" class="gallery-item">
+            <img :src="image.src" :alt="image.alt" @click="openImage(image.src, image.alt)">
+          </div>
+          <div v-if="showModal" class="modal">
+            <div class="modal-content">
+              <span class="close" @click="closeModal">&times;</span>
+              <img :src="selectedImage.src" :alt="selectedImage.alt">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -23,6 +31,8 @@ export default {
         {src: 'src/assets/Home/Galery/4.png', alt: 'Description 2'},
         {src: 'src/assets/Home/Galery/5.png', alt: 'Description 2'},
         {src: 'src/assets/Home/Galery/6.png', alt: 'Description 2'},
+        {src: 'src/assets/Home/Galery/7.png', alt: 'Description 2'},
+        // {src: 'src/assets/Home/Galery/8.png', alt: 'Description 2'},
         // Add more images as needed
       ],
       showModal: false,
@@ -47,6 +57,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center; /* Выравнивание элементов по центру */
   text-align: center; /* Выравнивание заголовка по центру */
+  margin-left: 45px;
 }
 
 h2 {
@@ -82,7 +93,7 @@ img {
   position: relative;
   padding: 20px;
   background-color: #fefefe;
-  max-width: 20%;
+  max-width: 25%;
   max-height: 80%;
   overflow: auto;
 }

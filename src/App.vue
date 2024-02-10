@@ -7,7 +7,7 @@
     <!--   <ChoclateMid></ChoclateMid>-->
     <!--   <Footer></Footer>-->
 
-    <Home></Home>
+<!--    <Home></Home>-->
 <!--    <Menu></Menu>-->
     <router-view></router-view>
   </div>
@@ -24,6 +24,7 @@ import ChoclateMid from "@/components/ChoclateMid.vue";
 import Galery from "@/components/Galery.vue";
 import Home from "@/views/Home.vue";
 import Menu from "@/views/Menu.vue";
+// import router from "@/router/index.js";
 
 export default {
   components: {Menu, Home, ChoclateMid, Footer, AboutMe, LogoPart, Header, Galery}

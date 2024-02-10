@@ -6,11 +6,7 @@
     <Galery></Galery>
     <ChoclateMid></ChoclateMid>
     <Footer></Footer>
-
   </div>
-
-
-
 </template>
 
 <script>
