@@ -22,4 +22,11 @@
   object-fit: cover;
   margin-top: 50px;
 }
+
+@media screen and (min-width: 768px) {
+  #myVideo {
+    max-height: 600px; /* Новая максимальная высота для широких экранов */
+  }
+}
+
 </style>

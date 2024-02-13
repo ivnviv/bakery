@@ -20,8 +20,24 @@
             <input v-model="emailAddress" @input="checkEmail" type="email" id="email" name="email" required
                    placeholder="example@mail.com">
             <p class="error">{{ errors.email }}</p>
-            <input v-model="phoneNumber" @input="handleInput"  maxlength="19" type="tel" id="tel" name="tel" required placeholder="+7 (___) ___-__-__" >
-            <p class="error">{{ errors.phone }}</p>
+            <div class="input-group">
+              <span class="input-group-addon"><span>+7</span></span>
+              <input
+                  type="tel"
+                  v-model="phone"
+                  name="phone"
+                  id="phone"
+                  placeholder="(921) 111-1111"
+                  autocomplete="tel"
+                  maxlength="14"
+                  class="form-control"
+                  v-phone
+                  pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}"
+                  required
+              />
+            </div>
+<!--            <input v-model="phoneNumber" @input="handleInput"  maxlength="19" type="tel" id="tel" name="tel" required placeholder="+7 (___) ___-__-__" >-->
+<!--            <p class="error">{{ errors.phone }}</p>-->
             <p>{{ phoneNumber }}</p>
           </div>
         </div>
@@ -35,7 +51,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <button type="submit">Отправить</button>
+          <button type="button">Отправить</button>
         </div>
       </div>
     </div>
@@ -119,35 +135,27 @@ handleInput() {
   width: 100vw;
 }
 
-.contact-info {
-  text-align: center;
-  margin-bottom: 20px;
-
-}
-
+/* Добавленные стили для адаптации на маленьких экранах */
 .contact-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%; /* Изменено для занимания всей ширины на маленьких экранах */
   margin: 0 auto;
 }
 
-
 input,
 textarea {
-  width: 70%;
+  width: 100%; /* Изменено для занимания всей ширины на маленьких экранах */
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 15px;
 }
 
-textarea {
-  height: 150px;
-}
-
 button {
+  width: 50%; /* Изменено для занимания половины ширины на маленьких экранах */
+  margin-top: 10px; /* Добавленный стиль для отступа от предыдущего элемента */
   background-color: #e3853a;
   color: white;
   padding: 10px;
@@ -156,10 +164,20 @@ button {
   transition: background-color 0.3s ease;
   border-radius: 15px;
   display: block;
-  margin: 0 auto; /* Добавленный стиль для центрирования по горизонтали */
 }
-
 button:hover {
   background-color: #1c1c1b;
+}
+
+
+/* Медиа-запрос для установки стилей на маленьких экранах */
+@media screen and (max-width: 600px) {
+  .contact-data {
+    width: 90%; /* Изменено для занимания 90% ширины на очень маленьких экранах */
+  }
+
+  button {
+    width: 100%; /* Изменено для занимания всей ширины на маленьких экранах */
+  }
 }
 </style>

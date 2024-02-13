@@ -1,14 +1,6 @@
 <template>
   <div class="main-container">
-    <!--   <Header></Header>-->
-    <!--   <LogoPart></LogoPart>-->
-    <!--   <AboutMe></AboutMe>-->
-    <!--   <Galery></Galery>-->
-    <!--   <ChoclateMid></ChoclateMid>-->
-    <!--   <Footer></Footer>-->
 
-<!--    <Home></Home>-->
-<!--    <Menu></Menu>-->
     <router-view></router-view>
   </div>
 

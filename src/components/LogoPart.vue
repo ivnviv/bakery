@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -15,12 +14,9 @@
       </div>
     </div>
   </div>
-
-
 </template>
 
 <style scoped>
-
 .main-picture {
   background-image: url("../assets/Home/mainPicture.jpg");
   background-size: cover;
@@ -49,5 +45,20 @@
 
 .bakery-type {
   font-size: 18px;
+}
+
+/* Медиа-запрос для маленьких экранов */
+@media (max-width: 767px) {
+  .main-picture {
+    height: 400px; /* Уменьшаем высоту для маленьких экранов */
+  }
+
+  .bakery-name {
+    font-size: 70px; /* Уменьшаем размер шрифта для маленьких экранов */
+  }
+
+  .bakery-type {
+    font-size: 14px; /* Уменьшаем размер шрифта для маленьких экранов */
+  }
 }
 </style>

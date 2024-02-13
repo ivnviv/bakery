@@ -2,7 +2,10 @@
   <div class="container">
     <div>
       <h1>ТУТ БУДЕТ МЕНЮ КЭКСОВ</h1>
-
+<form>
+  <input type="text" required placeholder="sss">
+  <input type="text" required  placeholder="ccc">
+</form>
       <div class="row">
         <div class="col-md-4" style="background-color: #ff0000">Left</div>
         <div class="col-md-4" style="background-color: #fa9999">Middle</div>

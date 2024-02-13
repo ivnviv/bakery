@@ -1,6 +1,4 @@
 <template>
-
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -55,20 +53,21 @@ export default {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Выравнивание элементов по центру */
-  text-align: center; /* Выравнивание заголовка по центру */
-  margin-left: 45px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px; /* Уменьшен отступ для маленьких экранов */
 }
 
 h2 {
   width: 100%;
   margin-bottom: 20px;
+  font-size: 20px; /* Увеличен размер шрифта для маленьких экранов */
 }
 
 .gallery-item {
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
-  flex: 0 0 calc(15% - 20px); /* Изменено на flex для управления шириной */
+  flex: 0 0 calc(15% - 10px); /* Изменено на flex для управления шириной */
 }
 
 img {
@@ -93,7 +92,7 @@ img {
   position: relative;
   padding: 20px;
   background-color: #fefefe;
-  max-width: 25%;
+  max-width: 90%;
   max-height: 80%;
   overflow: auto;
 }
@@ -101,10 +100,9 @@ img {
 .close {
   position: absolute;
   top: -6px;
-  right: 0px;
+  right: 0;
   font-size: 25px;
   color: #000000;
   cursor: pointer;
 }
 </style>
-
