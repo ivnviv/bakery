@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       images: [
-        {src: 'C:\\Users\\User\\Desktop\\Projects\\learnvue\\bakery\\src\\assets\\Home\\Galery\\1.png', alt: 'Description 1'},
+        {src: 'src/assets/Home/Galery/1.png', alt: 'Description 2'},
         {src: 'src/assets/Home/Galery/3.png', alt: 'Description 2'},
         {src: 'src/assets/Home/Galery/4.png', alt: 'Description 2'},
         {src: 'src/assets/Home/Galery/5.png', alt: 'Description 2'},
