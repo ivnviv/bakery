@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">SANYA</router-link>
       <button class="navbar-toggler" type="button"
@@ -95,6 +95,8 @@ const scrollToFooter = () => {
 .navbar {
   background-color: #f7f7f7 !important;
   opacity: 90%;
+
+
 }
 
 .navbar-nav li {

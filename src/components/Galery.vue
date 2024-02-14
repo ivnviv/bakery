@@ -24,12 +24,12 @@ export default {
   data() {
     return {
       images: [
-        {src: 'src/assets/Home/Galery/1.png', alt: 'Description 2'},
-        {src: 'src/assets/Home/Galery/3.png', alt: 'Description 2'},
-        {src: 'src/assets/Home/Galery/4.png', alt: 'Description 2'},
-        {src: 'src/assets/Home/Galery/5.png', alt: 'Description 2'},
-        {src: 'src/assets/Home/Galery/6.png', alt: 'Description 2'},
-        {src: 'src/assets/Home/Galery/7.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/1.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/3.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/4.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/5.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/6.png', alt: 'Description 2'},
+        {src: '../assets/Home/Galery/7.png', alt: 'Description 2'},
         // {src: 'src/assets/Home/Galery/8.png', alt: 'Description 2'},
         // Add more images as needed
       ],
