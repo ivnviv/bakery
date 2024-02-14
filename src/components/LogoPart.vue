@@ -32,6 +32,7 @@
   color: white;
   transition: color 0.3s, transform 0.3s;
   font-family: 'Indie+Flower', cursive;
+  user-select:none
 }
 
 .bakery-title:hover {
