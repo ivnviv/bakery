@@ -36,21 +36,23 @@
 
 <style scoped>
 
+
 .container-fluid {
-  margin-top: 50px;
-  margin-bottom: 50px;
+background: white !important;
 }
 
 .my-history-photo {
-  width: 75%;
+  width: 90%;
   margin-left: 50px;
+  padding: 50px;
 }
 
 .my-history-text {
-  font-size: 13px;
+  font-size: 15px;
   color: #464545;
   font-family: 'Indie+Flower', cursive;
-  margin-right: 90px;
+  padding: 50px;
+  text-align: justify;
 }
 
 /* Медиа-запрос для маленьких экранов */

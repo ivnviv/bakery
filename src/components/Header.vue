@@ -122,8 +122,6 @@ const scrollToFooter = () => {
       transition: color 0.3s, transform 0.3s;
 
     }
-
-
   }
 }
 

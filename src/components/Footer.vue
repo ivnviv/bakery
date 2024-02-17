@@ -40,6 +40,7 @@
                 pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}"
                 required
             />
+            <p class="error">{{ errors.email }}</p>
           </div>
         </div>
         <div class="col-md-6">
@@ -56,8 +57,12 @@
 
         </div>
         <div class="row button-container">
-          <div class="col-md-12">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
             <button type="button">Отправить</button>
+          </div>
+          <div class="col-md-4">
           </div>
         </div>
       </div>
@@ -103,6 +108,10 @@ export default {
         this.errors.email = ''; // Очищаем ошибку, если все условия выполнены
       }
     },
+    checkPhone() {
+
+    }
+
   },
 };
 </script>
@@ -172,12 +181,15 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .contact-data {
-    width: 90%;
+  .contact-data,
+  .message {
+    width: 100%;
+    margin-top: 10px;
   }
 
   button {
-    width: 50%;
+    margin-top: 20px;
+    width: 110%;
   }
 }
 </style>
