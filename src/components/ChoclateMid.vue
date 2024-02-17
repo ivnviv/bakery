@@ -56,6 +56,7 @@
   height: 600px;
   padding-bottom: 50px;
   padding-top: 50px;
+
 }
 
 .ParallaxVideo video {
@@ -64,17 +65,18 @@
   top: 0;
   z-index: -999;
   object-fit: cover;
+
 }
 
 video {
   width: 100vw;
   background-position: center;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-object-fit: cover;
-
-background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: cover;}
+}
 
 
 </style>

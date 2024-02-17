@@ -35,12 +35,14 @@
                 v-model="phoneNumber"
                 name="phone"
                 id="phone"
-                placeholder="+7(921) 111-1111"
+                placeholder="+7(...)..-..-.."
                 maxlength="12"
                 pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}"
                 required
+                @input="checkPhone"
             />
-            <p class="error">{{ errors.email }}</p>
+            <p class="error">{{ errors.phone }}</p>
+            <input-mask v-model="phoneNumber" mask="##-##" placeholder="Enter value" />
           </div>
         </div>
         <div class="col-md-6">
@@ -72,7 +74,11 @@
 </template>
 
 <script>
+
+
 export default {
+
+
   data() {
     return {
       senderName: '',
@@ -87,6 +93,7 @@ export default {
     };
   },
   methods: {
+
     checkName() {
       if (!this.senderName.trim()) {
         this.errors.name = 'Имя не может быть пустым';
@@ -104,12 +111,17 @@ export default {
         this.errors.email = 'Email не может быть пустым';
       } else if (!emailRegex.test(this.emailAddress.trim())) {
         this.errors.email = 'Введи действительный емейл';
+
       } else {
-        this.errors.email = ''; // Очищаем ошибку, если все условия выполнены
+        this.errors.email = '';
       }
     },
     checkPhone() {
-
+      if (this.phoneNumber.replace(/[^0-9]/g, '').length < 12) {
+        this.errors.phone = 'Номер телефона слишком короткий';
+      } else {
+        this.errors.phone = '';
+      }
     }
 
   },
@@ -150,7 +162,7 @@ input {
 
 textarea {
   width: 100%;
-  height: 100%;
+  height: 85%;
   border: 1px solid #ddd;
   border-radius: 15px;
   padding: 8px;

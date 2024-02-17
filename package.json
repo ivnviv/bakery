@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@devindex/vue-mask": "^2.0.3",
     "@floating-ui/vue": "^1.0.6",
     "bootstrap": "^5.3.2",
     "portal-vue": "^3.0.0",
+    "v-mask": "^2.3.0",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5",
-    "vue-the-mask": "^0.11.1"
+    "vue-input-mask": "^0.0.11",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",

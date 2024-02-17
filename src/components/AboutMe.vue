@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 my-history-photo-block">
         <img class="my-history-photo" src="../assets/Home/Sanya2.png" alt="">
       </div>
       <div class="col-md-6">
@@ -9,7 +9,6 @@
           <div class="my-history-text">
             <h1>Моя история</h1>
             <h2>Меня зовут Санька</h2>
-            <p>___________________</p>
             <p>
               Однаждый я, Санька, решила попробовать себя в чем-то необычном. Зачем выбирать между хлебом и кунг-фу,
               если можно объединить их? Ведь оба требуют гибкости и силы!
@@ -38,13 +37,17 @@
 
 
 .container-fluid {
-background: white !important;
+background: white;
+}
+
+.my-history-photo-block {
+  padding: 50px;
 }
 
 .my-history-photo {
-  width: 90%;
-  margin-left: 50px;
-  padding: 50px;
+  height: 60vh;
+  border-radius: 20px;
+  margin-left: 60px;
 }
 
 .my-history-text {
@@ -66,5 +69,6 @@ background: white !important;
     margin-right: 0; /* Убираем отступ справа на маленьких экранах */
     font-size: 12px; /* Уменьшаем размер шрифта на маленьких экранах */
   }
+
 }
 </style>
