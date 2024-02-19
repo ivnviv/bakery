@@ -21,6 +21,7 @@
                 id="name"
                 name="name"
                 required
+                maxlength="20"
                 placeholder="Ваше Имя">
             <p class="error">{{ errors.name }}</p>
             <input
@@ -28,6 +29,7 @@
                 @input="checkEmail"
                 type="email" id="email"
                 name="email" required
+                maxlength="25"
                 placeholder="example@mail.com">
             <p class="error">{{ errors.email }}</p>
             <input
